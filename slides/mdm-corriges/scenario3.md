@@ -6,28 +6,27 @@ Des échanges avec les populations me laissent penser qu'une partie de l'aide al
 Avec mes collègues, nous essayons d'en savoir plus,
 afin de faire remonter le problème au CICR.***
 
-NB: Le CICR est en théorie couvert par la convention de Geneve, status proche de l'immunité diplomatique. "En théorie", d'où le choix de cet exemple.
+NB: Le CICR est en théorie couvert par la convention de Genève, statut proche de l'immunité diplomatique. "En théorie", d'où le choix de cet exemple.
 
 ### Quoi protéger ?
 - Moi même, mon intégrité physique
-- Les informations que j'ai
-- l'identité des personnes me les ayant transmises.
+- Les informations dont je dispose
+- L'identité des personnes me les ayant transmises
 - Le fait que j'aie connaissance de ces informations
 
 ### Contre qui ?
 C'est toute la question, on ne sait pas à l'avance à qui on a affaire.
-- Un groupe mafieux ? Qui comprend-t-il ?
-   - La police locale ?
-   - Le gouvernement local ?
-   - D'autres employés du CICR ? des cadres qui pourraient être impliqués, ou qui ne voudraient pas que l'affaire prenne de l'ampleur pour ne pas ternir la réputation de l'ONG ?
-   - D'autres employés d'autres ONG ? (plutôt des alliés a priori, sauf si ils sont impliqués aussi)
+- Un groupe criminel ou mafieux ?
+- La police locale ?
+- Le gouvernement local ?
+- D'autres employés du CICR ? D'autres ONG ?
 
 ### Les moyens de mes adversaires
-- vol, intrusion, dans le bus, dans mon logement..
-- "perquisions" officieuses de la police locale
+- vol dans le bus, dans mon logement..
+- "perquisitions" officieuses de la police locale
 - Si le gouvernement est impliqué : écoutes téléphones & perquisions "officielles" ?
 - Pressions sur d'autres projets de la CICR de la part du gouvernement local ?
-- Je ne sais si d'autres personnes de mon organisation sont impliqués, puis-je avoir confiance dans l'infrastructure du CICR ?
+- Je ne sais si d'autres personnes de mon organisation sont impliquées, puis-je avoir confiance dans l'infrastructure du CICR ?
 
 ### Si j'échoue:
 - Mise en danger de moi-même et de mes collègues

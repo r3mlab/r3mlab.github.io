@@ -2,59 +2,59 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Atelier ProtonMail</title>
+  <title>Atelier ProtonMail</title>
 
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black-remix.css">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black-remix.css">
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
 
-    <!-- Printing and PDF exports -->
-    <script>
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-        document.getElementsByTagName('head')[0].appendChild(link);
-    </script>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
 </head>
 
 <body>
-    <div class="reveal">
-        <div class="slides">
+  <div class="reveal">
+    <div class="slides">
 
-            <section id="titre" data-markdown>
-                <textarea data-template>
+      <section id="titre" data-markdown>
+        <textarea data-template>
 ## Atelier : ProtonMail
 
 ![protonmail logo](img/protonmail-logo.png)
 					</textarea>
-            </section>
+      </section>
 
-            <section id="pourquoi" data-markdown>
-                <textarea data-template>
+      <section id="pourquoi" data-markdown data-background="#4d7e65">
+        <textarea data-template>
 ## Pourquoi utiliser ProtonMail ?
 - Le business model : security as a service <br>(vs. Google dont le modèle est basé sur la publicité)
 - Utiliser PGP facilement
 - Vous place hors de portée de pas mal d’adversaires
 					</textarea>
-            </section>
+      </section>
 
-            <section id="pourquoi-pas" data-markdown>
-                <textarea data-template>
+      <section id="pourquoi-pas" data-markdown data-background="#b5533c">
+        <textarea data-template>
 ## Pourquoi ne PAS utiliser ProtonMail
 - Pas entièrement open source
 - Risque de compromission du service ? cf. [LavaBit](https://en.wikipedia.org/wiki/Lavabit)
 - Est tenu de collaborer avec les autorités dans certains cas, cf. [Transparency Report](https://protonmail.com/blog/transparency-report/)
 					</textarea>
-            </section>
+      </section>
 
-            <section "théorie" data-markdown>
-                <textarea data-template>
+      <section "théorie" data-markdown data-background="#4d7e65">
+        <textarea data-template>
 ### La théorie
 Un mélange de chiffrement symétrique et assymétrique :
 - une paire de clés pour envoyer/recevoir des messages
@@ -63,10 +63,10 @@ Un mélange de chiffrement symétrique et assymétrique :
 
 → En théorie, Protonmail ne devrait pas pouvoir lire le contenu.
 </textarea>
-            </section>
+      </section>
 
-            <section id="mais" data-markdown>
-                <textarea data-template>
+      <section id="mais" data-markdown data-background="#b5533c">
+        <textarea data-template>
 ## Mais...
 - Métadonnées : de connexion, de messages… <br>Encore plus important que le contenu !
 <br>→ Accessibles à Protonmail (et donc sujettes à requisitions)
@@ -74,10 +74,10 @@ Un mélange de chiffrement symétrique et assymétrique :
 <br><br>
 → Eviter ProtonMail si la menace est potentiellement sophistiquée.
 					</textarea>
-            </section>
+      </section>
 
-            <section id="inscription" data-markdown>
-                <textarea data-template>
+      <section id="inscription" data-markdown>
+        <textarea data-template>
 ## Inscription
 https://protonmail.com
 
@@ -86,21 +86,21 @@ https://protonmail.com
 - Quel type de mot de passe utiliser ?
 - Dois-je vérifier mon compte par mail ? par téléphone ?
 					</textarea>
-            </section>
+      </section>
 
-            <section id="b-a-ba" data-markdown>
-                <textarea data-template>
+      <section id="b-a-ba" data-markdown>
+        <textarea data-template>
 ## Le B-A BA
 Lorsqu'on rédige un nouveau courrier :
 - à un autre utilisateur de ProtonMail :<br>  chiffré de bout en bout (PGP)
-- à un mail extérieur : <br>  pas chiffré, ou chiffrement assymétrique.
+- à un mail extérieur : <br>  pas chiffré, ou chiffrement asymétrique.
 - possibilité de joindre sa clé publique
 - un doute ? Regarder le cadenas à côté du destinataire.
                     </textarea>
-            </section>
+      </section>
 
-            <section id="pgp" data-markdown>
-                <textarea data-template>
+      <section id="pgp" data-markdown>
+        <textarea data-template>
 ## PGP avec tout le monde !
 - Trouver la clé publique de son contact.
 Exemples :
@@ -109,27 +109,27 @@ Exemples :
 - L'ajouter aux contacts
 - PGP/Mime vs. PGP/inline
                     </textarea>
-            </section>
+      </section>
 
-            <section>
+      <section>
 
-                <section id="sécuriser compte" data-markdown>
-                    <textarea data-template>
+        <section id="sécuriser compte" data-markdown>
+          <textarea data-template>
 ## Bien sécuriser son compte ProtonMail
                     </textarea>
-                </section>
+        </section>
 
-                <section id="securiser-cle" data-markdown>
-                    <textarea data-template>
+        <section id="securiser-cle" data-markdown>
+          <textarea data-template>
 ## La clé de chiffrement
 - Comment générer une clé plus forte ?
 - Faut-il le faire ?
 - Comment/pourquoi révoquer une clé ?
                     </textarea>
-                </section>
+        </section>
 
-                <section id="securiser-2FA" data-markdown>
-                    <textarea data-template>
+        <section id="securiser-2FA" data-markdown>
+          <textarea data-template>
 ## L'authentification à deux facteurs
 - Comment ça marche ?
 - A activer sous Settings > Security
@@ -138,79 +138,79 @@ Exemples :
 
 → Se déconnecter, se reconnecter.
                     </textarea>
-                </section>
+        </section>
 
-                <section id="securiser-logs-trackers" data-markdown>
-                    <textarea data-template>
+        <section id="securiser-logs-trackers" data-markdown>
+          <textarea data-template>
 ## Surveiller l'accès à son compte
 - Settings > Security > Authentication Logs
 - 'Basic' ou 'Advanced'
 
 </textarea>
-                </section>
+        </section>
 
-                <section id="securiser-logs-trackers" data-markdown>
-                    <textarea data-template>
+        <section id="securiser-logs-trackers" data-markdown>
+          <textarea data-template>
 ## Désactiver les traqueurs
 - Account > Email Content
 - "Remote content" + "Embedded images" → "manual"
 </textarea>
-                </section>
+        </section>
 
-            </section>
+      </section>
 
-            <section id="ressources" data-markdown>
-                <textarea data-template>
+      <section id="ressources" data-markdown>
+        <textarea data-template>
 ## Ressources
 - [ProtonMail: How to use PGP](https://protonmail.com/support/knowledge-base/how-to-use-pgp/)
 - [Protonmail like a pro](https://freedom.press/training/protonmail-pro/)<br>(Freedom of the Press Foundation)
 - [ProtonMail Threat Model](https://protonmail.com/blog/protonmail-threat-model/)
     </textarea>
-            </section>
+      </section>
 
-        </div>
     </div>
+  </div>
 
-    <div id="footer">
-        <p><small></small></p>
-        <p><small><a href="index.html">Slides</a> / ProtonMail</small></p>
-        <p><small><a href="https://r3mlab.github.io">remlab</a> - <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
-    </div>
+  <div id="footer">
+    <p><small></small></p>
+    <p><small><a href="index.html">Slides</a> / ProtonMail</small></p>
+    <p><small>r3mlab - <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+  </div>
 
 
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
 
-    <script>
-        // More info about config & dependencies:
-        // - https://github.com/hakimel/reveal.js#configuration
-        // - https://github.com/hakimel/reveal.js#dependencies
-        Reveal.initialize({
-            controls: true,
-            progress: true,
-            history: true,
-            center: true,
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
 
-            dependencies: [{
-                    src: 'plugin/markdown/marked.js'
-                },
-                {
-                    src: 'plugin/markdown/markdown.js'
-                },
-                {
-                    src: 'plugin/notes/notes.js',
-                    async: true
-                },
-                {
-                    src: 'plugin/highlight/highlight.js',
-                    async: true,
-                    callback: function() {
-                        hljs.initHighlightingOnLoad();
-                    }
-                }
-            ]
-        });
-    </script>
+      dependencies: [{
+          src: 'plugin/markdown/marked.js'
+        },
+        {
+          src: 'plugin/markdown/markdown.js'
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true,
+          callback: function() {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
 </body>
 
 </html>

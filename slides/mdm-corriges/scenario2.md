@@ -4,7 +4,7 @@
 
 ### Quoi protéger ?
 - Mon intégrité physique
-- Mes informations personnelles : adresse, noms de mes proches, de mes enfants
+- Mes informations personnelles : adresse, noms de mes proches, etc.
 - Mes notes de travail
 - Mes échanges avec d'autres sources
 
@@ -26,7 +26,7 @@
 - Procédure judiciaire
 
 ### Quels moyens mettre en oeuvre ?
-- Vérifier les informations librement disponibles sur moi-même sur Internet : peut-on trouver mon adresse ? le nom de mes proches, de mes enfants ? Ma date de naissance ?
+- Vérifier les informations librement disponibles sur moi-même sur Internet : peut-on trouver mon adresse ? Le nom de mes proches, de mes enfants ? Ma date de naissance ?
 
 - Cloisonner les moyens de contact : créer une adresse e-mail uniquement pour ces sources, utiliser une carte SIM jetable si besoin.
 

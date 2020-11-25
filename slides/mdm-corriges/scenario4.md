@@ -1,11 +1,11 @@
 # Modèle(s) de menace - Scénario 4
 
-***Je suis étudiant·e à Sciences Po Rennes. J'organise des actions militantes sur le campus et en dehors. Suite à des diffusions de tracts, et au blocage de l'IEP, la direction fait intervenir la police sur le campus, convoque des conseils de discipline (avec à la clef des exclusions) et/ou porte plainte pour, menace, chantage, diffamation, et violation de la correspondance privée. Je souhaite continuer à organiser des actions sur campus et dehors. Comment m'organiser ?***
+***Je suis étudiant·e à Sciences Po Rennes. J'organise des actions militantes sur le campus et en dehors. Suite à des diffusions de tracts et au blocage de l'IEP, la direction fait intervenir la police sur le campus, convoque des conseils de discipline (avec à la clef des exclusions) et/ou porte plainte pour, menace, chantage, diffamation, et violation de la correspondance privée. Je souhaite continuer à organiser des actions sur campus et dehors. Comment m'organiser ?***
 
 ### Quoi protéger ?
 - Le contenu de mes communications
 - Les documents que j'ai pu rédiger sur mon ordinateur ou mon espace numérique personnel
-- L'identité de mes camarades (~= +/- mon cercle social)
+- L'identité de mes camarades, mon cercle social
 - La date, le lieu, la teneur des prochaines réunion et actions
 
 ### Contre qui ?
@@ -21,8 +21,8 @@
 - Accès potentiel aux boites mails & ordinateurs gérées par l'établissement ;
 - Historique des données de connexion au réseau de Sciences Po.
 - Historique de l'accès à l'établissement si badge à l'entrée
-- Police et justice impliquées, donc risque d'écoutes & perquisitions (dont saisie ordis & tels);
-- Intimidation, harcèlement, stalking
+- Police et justice impliquées, donc risque d'écoutes & perquisitions (dont saisie d'ordinateurs & téléphones);
+- Intimidation, harcèlement
 - Eventuelle vengeance sur la scolarité au sein de l'établissement, échecs répétés au Grand Oral, etc.
 
 ## Si j'échoue:
@@ -34,11 +34,11 @@
 
 ## Quels moyens mettre en oeuvre ?
 
-Je dois au maximum segmenter pour ne pas relier mon identité à mes actions. J'utilise des pseudos et des outils dédiées. Je dois faire attention à bien maintenir cette isolation.
+Je dois au maximum segmenter pour ne pas relier mon identité à mes actions. J'utilise des pseudos et des outils dédiés. Je dois faire attention à bien maintenir cette isolation.
 
 - Outil de téléphonie chiffrée  (Signal, Whatsapp)
 
-- Boite mail dédiée (chez un fournisseur de confiance, et/ou me laissant m'enregistrer sans utiliser un numéro de Téléphone)
+- Boite mail dédiée (chez un fournisseur de confiance, et/ou me laissant m'enregistrer sans utiliser un numéro de téléphone)
 
 - Si besoin de téléphone classique : SIM **et** téléphone jetable
 

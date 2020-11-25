@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Sécurité des appareils</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black-remix.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section id="titre" data-markdown data-background-image="https://media.giphy.com/media/5Zesu5VPNGJlm/giphy.gif">
+				<textarea data-template>
+						# Sécurité des appareils
+					</textarea>
+			</section>
+
+			<section id="intro" data-markdown>
+				<textarea data-template>
+						## Appareils
+
+						* Ordinateurs vs. téléphones vs. le reste
+						* Systèmes d'exploitation
+						* Connectique: USB, SD, etc.
+						* Accessoires utiles
+						* Compartimenter / Utiliser [Tails](https://tails.boum.org/)
+					</textarea>
+			</section>
+
+			<section id="maj" data-markdown>
+				<textarea data-template>
+						![updates](img/updates.png) <!-- .element height="55%" width="55%" -->
+						## Mises à jour
+						* Pourquoi ? <q> je n'ai pas besoin des dernières fonctionnalités </q>
+						* Aussi fréquentes que possible / dès que possible.
+						* Mises à jour de sécurité automatiques si possible.
+						* Attention aux "vieux" appareils
+					</textarea>
+			</section>
+
+			<section id="apps" data-markdown>
+				<textarea data-template>
+						## Applications
+
+						* Utiliser des applications open-source et/ou réputées.
+						* Les télécharger depuis le site officiel ou l'App Store
+						* Eviter les logiciels piratés.
+						* Désinstaller Flash, Java, Adobe Reader
+					</textarea>
+			</section>
+
+			<section id="antivirus" data-markdown>
+				<textarea data-template>
+						## Antivirus
+
+						* Vraiment utile ? Contre quoi ?
+						* Windows/Mac OS/Linux/Téléphones
+						* Logiciels libres vs logiciels propriétaires
+					</textarea>
+			</section>
+
+			<section id="reseau" data-markdown>
+				<textarea data-template>
+						## Réseau
+
+						* Activer le pare-feu
+						* Les réseaux Wifi
+						 - vulnérabilités
+						 - mot de passe
+						 - Wifis publics
+						 - quelles traces ?
+					</textarea>
+			</section>
+
+			<section>
+
+				<section data-markdown data-background-image="https://freedom.press/media/images/kanyes_password.original.gif">
+					<textarea data-template >
+						## Les ~~mots~~ phrases de passe
+					</textarea>
+				</section>
+
+				<section "mdp" data-markdown>
+					<textarea data-template>
+						## Un bon mot de passe est :
+						- à utilisation unique
+						- long
+						- varié
+						- aléatoire
+
+					</textarea>
+				</section>
+
+				<section "mdp-warning" data-markdown>
+					<textarea data-template>
+						## Attention !
+
+						- Les mots de passes difficiles à deviner par un humain peuvent être faciles à deviner par un ordinateur.
+						- Eviter les subst1tuti0ns et autres @rtif!ces
+					</textarea>
+				</section>
+
+				<section id="mdp-diceware" data-markdown>
+					<textarea data-template>
+						## Des mots de passe forts <br><b>ET</b> faciles à mémoriser ?
+
+						- La méthode *Diceware*
+						- En pratique : [en ligne](https://www.rempe.us/diceware/#eff) ou hors-ligne ? quel dico ?
+					</textarea>
+				</section>
+
+				<section id="mdp-telephone" data-markdown>
+					<textarea data-template>
+						## Et sur téléphone ?
+						- PIN ?
+						- Schéma ?
+						- Mot de passe ?
+						- Biométrie ?
+					</textarea>
+				</section>
+
+			</section>
+
+			<section id="chiffrement" data-markdown>
+				<textarea data-template>
+						## Chiffrer ses appareils
+
+						- iOS / Android : dans les paramètres
+						- FileVault (Mac)
+						- Bitlocker (Windows Pro)
+						- LUKS/cryptsetup (Linux)
+						- Les limites du chiffrement & les solutions
+					</textarea>
+			</section>
+
+			<!-- <section id="boot" data-markdown>
+				<textarea data-template>
+						## Sécuriser le démarrage de l'ordinateur
+
+						- BIOS, UEFI, GRUB... WTF ?
+						- Définir un mot de passe superviseur<br><small>(attention au QWERTY!)</small>
+						- Forcer le démarrage sur le disque dur, interdire démarrage sur USB.
+						- Les limites & les solutions
+					</textarea>
+			</section> -->
+
+			<section id="chiffrement" data-markdown>
+				<textarea data-template>
+						## Chiffrer ses données
+
+						Voir [Atelier Veracrypt](atelier-veracrypt.html)
+					</textarea>
+			</section>
+
+			<section id="ressources" data-markdown>
+				<textarea data-template>
+						## Ressources
+
+						- [Surveillance Self Defense](https://ssd.eff.org/en) (EFF)
+						- [Training](https://freedom.press/training/) (Freedom of the Press Foundation)
+						- [The guide to not getting hacked](https://motherboard.vice.com/en_us/article/d3devm/motherboard-guide-to-not-getting-hacked-online-safety-guide) (Motherboard)
+						- [Surveillance Self-Defense for Journalists](https://medium.com/theintercept/surveillance-self-defense-for-journalists-ce627e332db6)<br>(The Intercept)
+						- [First Aid Kit](https://www.digitaldefenders.org/digitalfirstaid/) (Digital Defenders)
+					</textarea>
+			</section>
+
+		</div>
+	</div>
+
+	<div id="footer">
+		<p><small><a href="index.html">Slides</a> / Sécurité des terminaux</small></p>
+		<p><small>r3mlab - <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+	</div>
+
+	<!-- <script src="lib/js/head.min.js"></script> -->
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+			backgroundTransition: 'slide',
+
+
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function() {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>

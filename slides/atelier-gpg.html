@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Atelier PGP</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black-remix.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section id="titre" data-markdown>
+        <textarea data-template>
+## Atelier : PGP
+avec Thunderbird et Enigmail
+
+![thunderbird logo](img/thunderbird.png) <!-- .element height="15%" width="15%" --> ![enigmail logo](img/enigmail.png) <!-- .element height="15%" width="15%" -->
+
+					</textarea>
+      </section>
+
+      <section>
+
+        <section id="theorie" data-markdown>
+          <textarea data-template>
+                  ## (un peu de) Théorie
+      					</textarea>
+        </section>
+
+
+        <section id="comsec" data-markdown>
+          <textarea data-template>
+### Sécurité des communications ?
+<li class="fragment" style="text-align:left;">
+  <b>Authenticité</b>
+  <br><i>➔ Est-ce que je parle bien à qui je crois parler ?</i>
+</li>
+<li class="fragment" style="text-align:left;">
+  <b>Intégrité</b>
+  <br><i>➔ Le message reçu est-il bien le message envoyé ?</i>
+</li>
+<li class="fragment" style="text-align:left;">
+  <b>Confidentialité</b>
+  <br><i>➔ Le message a-t-il été lu par d'autres ?</i>
+</li>
+<li class="fragment" style="text-align:left;">
+  <b>Disponibilité</b>
+  <br><i>➔ Puis-je correspondre quand j'en ai besoin ?</i>
+</li>
+					</textarea>
+        </section>
+
+        <section id="symetrique" data-markdown>
+          <textarea data-template>
+                  ## Le chiffrement symétrique
+                  <br>
+  <li style="text-align:left;">un mot de passe pour chiffrer ET déchiffrer</li>
+  <li class="fragment" style="text-align:left;">...mais comment se l'échanger ?</li>
+					</textarea>
+        </section>
+
+        <section id="asymetrique" data-markdown>
+          <textarea data-template>
+## Le chiffrement asymétrique
+<br>
+  <li style="text-align:left;">Une clé pour chiffrer, une autre pour déchiffrer</li>
+  <li class="fragment" style="text-align:left;">Une paire de clés par personne</li>
+  <li class="fragment" style="text-align:left;">Quelques métaphores utiles : boîte aux lettres, cadenas...</li>
+					</textarea>
+        </section>
+
+
+        <section id="vocabulaire" data-markdown>
+          <textarea data-template>
+### Point vocabulaire sur <strike>le cryptage</strike> <strike>l’encryption</strike> le chiffrement
+<li class="fragment" style="text-align:left;">
+  <b>CHIFFRER</b> :
+  <i>rendre un message illisible en utilisant un mot de passe ou une clé publique</i>
+</li>
+
+<li class="fragment" style="text-align:left;">
+  <b>DECHIFFRER</b> :
+  <i>rendre un message lisible à nouveau en utilisant le mot de passe ou la clé privée</i>
+</li>
+
+<li class="fragment" style="text-align:left;">
+  <b>DECRYPTER</b> :
+  <i>rendre un message lisible SANS utiliser le mot de passe/la clé</i>
+</li>
+
+<li class="fragment" style="text-align:left;">
+  <b>PGP / OpenPGP / GnuPG / GPG … </b>
+</li>
+
+</textarea>
+        </section>
+
+
+      </section>
+
+
+      <section>
+
+        <section id="mails" data-markdown>
+          <textarea data-template>
+                  ## Chiffrer ses mails avec Thunderbird et Enigmail
+      					</textarea>
+        </section>
+
+
+      <section id="preparation" data-markdown>
+        <textarea data-template>
+          ## Préparation
+          <br>
+          <li class="fragment" style="text-align:left;">Installer <a href="https://gnupg.org/download/index.html#sec-1-2">GPG</a></li>
+          <li class="fragment" style="text-align:left;">Installer <a href="https://www.thunderbird.net/fr/">Thunderbird</a> et Enigmail</li>
+          <li class="fragment" style="text-align:left;">Quel mail utiliser ? Attention aux métadonnées !</li>
+          <li class="fragment" style="text-align:left;">Mon disque est-il chiffré ?</li>
+					</textarea>
+      </section>
+
+      <section id="generation-de-cle" data-markdown>
+        <textarea data-template>
+          ## Générer ma clé privée
+          <br>
+          <li class="fragment" style="text-align:left;">Quelle taille de clé choisir ?</li>
+          <li class="fragment" style="text-align:left;">Quel mot de passe choisir ?</li>
+          <li class="fragment" style="text-align:left;">Quelle durée avant expiration ?</li>
+          <li class="fragment" style="text-align:left;">Comment et où sauvegarder ma clé ?</li>
+					</textarea>
+      </section>
+
+      <section id="envoyer" data-markdown>
+        <textarea data-template>
+          ## Envoyer un mail chiffré
+          <br>
+          <li class="fragment" style="text-align:left;">Trouver la/les adresses de mon correspondant</li>
+          <li class="fragment" style="text-align:left;">Trouver sa clé publique et l’importer</li>
+          <li class="fragment" style="text-align:left;">Qu'est-ce qui est chiffré dans mon message ?</li>
+          <li class="fragment" style="text-align:left;">Ne pas oublier de joindre ma clé publique !</li>
+          <li class="fragment" style="text-align:left;">Signer ?</li>
+                    </textarea>
+      </section>
+
+      <section id="recevoir" data-markdown>
+        <textarea data-template>
+          ## Recevoir des mails chiffrés
+          <br>
+          <li class="fragment" style="text-align:left;">Quel mail exposer ?</li>
+          <li class="fragment" style="text-align:left;">Où publier ma clé publique ?</li>
+          <li class="fragment" style="text-align:left;">Serveurs de clés, Keybase, etc.</li>
+          <li class="fragment" style="text-align:left;">Les <i>fingerprints</i></li>
+                    </textarea>
+      </section>
+
+</section>
+
+<section id="fichiers" data-markdown>
+  <textarea data-template>
+          ## Chiffrer/Déchiffrer/signer des fichiers
+          Quelle différence avec Veracrypt ?
+        </textarea>
+</section>
+
+        <section id="integrite-logiciel" data-markdown>
+          <textarea data-template>
+## Vérifier l'intégrité d'un logiciel
+
+Exemple avec [Veracrypt](https://veracrypt.fr)
+                    </textarea>
+        </section>
+
+
+
+
+
+  <section data-background="#4d7e65" id="plus" data-markdown>
+    <textarea data-template>
+            ## Les +
+            <br>
+            <li class="fragment" style="text-align:left;">Solution entièrement open-source</li>
+            <li class="fragment" style="text-align:left;">Personne ne détient/gère ma clé</li>
+            <li class="fragment" style="text-align:left;">Tout se passe en dehors de mon navigateur.</li>
+            <li class="fragment" style="text-align:left;">Comprendre comment ça marche pour comprendre les enjeux et choisir un service de confiance.</li>
+
+          </textarea>
+  </section>
+
+
+  <section data-background="#b5533c" id="moins" data-markdown>
+    <textarea data-template>
+            ## Les -
+            <br>
+            <li class="fragment" style="text-align:left;">Pas exempt de problèmes de sécurité (cf. <a href="https://www.eff.org/deeplinks/2018/05/attention-pgp-users-new-vulnerabilities-require-you-take-action-now">EFAIL</a>)</li>
+            <li class="fragment" style="text-align:left;">Les métadonnées peuvent suffire à identifier une source.</li>
+            <li class="fragment" style="text-align:left;">Je suis responsable de la sécurité de ma clé.</li>
+            <li class="fragment" style="text-align:left;">Lourdingue / Erreurs vite faites</li>
+          </textarea>
+  </section>
+
+  <section id="conclusion" data-markdown>
+    <textarea data-template>
+            ## Conclusion
+
+            [Is PGP dead?](https://www.wired.co.uk/article/efail-pgp-vulnerability-outlook-thunderbird-smime)
+
+          </textarea>
+  </section>
+
+
+      <section id="ressources" data-markdown>
+        <textarea data-template>
+## Ressources
+- [Nothing2Hide: Crypto facile](https://protonmail.com/support/knowledge-base/how-to-use-pgp/)
+- [Nothing2Hide: Crypto avancée](https://freedom.press/training/protonmail-pro/)<br>
+- [FPF: Verifying open source software](https://freedom.press/training/verifying-open-source-software/)
+- [Enigmail: User Manual](https://www.enigmail.net/index.php/en/user-manual)
+    </textarea>
+      </section>
+
+    </div>
+  </div>
+
+  <div id="footer">
+    <p><small></small></p>
+    <p><small><a href="index.html">Slides</a> / PGP</small></p>
+    <p><small><a href="https://r3mlab.github.io">remlab</a> - <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+  </div>
+
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      dependencies: [{
+          src: 'plugin/markdown/marked.js'
+        },
+        {
+          src: 'plugin/markdown/markdown.js'
+        },
+        {
+          src: 'plugin/notes/notes.js',
+          async: true
+        },
+        {
+          src: 'plugin/highlight/highlight.js',
+          async: true,
+          callback: function() {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+</body>
+
+</html>

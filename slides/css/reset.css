@@ -28,3 +28,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, main, menu, nav, section {
   display: block;
 }
+
+.reveal .slides > section, .reveal .slides > section > section {
+  padding: 0;
+}

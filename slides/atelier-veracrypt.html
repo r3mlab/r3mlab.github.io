@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Atelier Veracrypt</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black-remix.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section id="titre" data-markdown>
+                <textarea data-template>
+## Atelier : Veracrypt
+
+![veracrypt logo](img/veracrypt-logo.png) <!-- .element height="25%" width="25%" -->
+					</textarea>
+            </section>
+
+            <section id="presentation" data-markdown>
+                <textarea data-template>
+                  ## Présentation
+                  - historique
+                  - le chiffrement symétrique
+                  - quelle différence avec le chiffrement de mon ordinateur?
+                  - quelle différence avec le chiffrement de l'utilitaire de disques sous MacOS ?
+					</textarea>
+            </section>
+
+            <section id="utilisation" data-markdown>
+                <textarea data-template>
+                  ## Quelle utilisation ?
+                  - Chiffrer mes données d'enquête
+                  - Archiver mes données (hors ligne ? en ligne ?)
+                  - Echanger des données ?
+                  - en voyage ?
+					</textarea>
+            </section>
+
+            <section id="preparation" data-markdown>
+                <textarea data-template>
+                  ## Préparation
+                  - Télécharger depuis le [site officiel](https://veracrypt.fr)
+                  - Vérifier le téléchargement
+                  - MacOS : installer [Fuse](https://osxfuse.github.io/)
+                  - Installer Veracrypt
+</textarea>
+            </section>
+
+            <section id="premier-lancement" data-markdown>
+                <textarea data-template>
+                  ## Premier lancement
+                  - Conteneurs/Volumes
+                  - "Slots"
+					</textarea>
+            </section>
+
+            <section id="conteneur-chiffre" data-markdown>
+                <textarea data-template>
+                  ## Créer un conteneur chiffré
+					</textarea>
+            </section>
+
+            <section id="cle-usb-chiffre" data-markdown>
+                <textarea data-template>
+                  ## Créer une clé USB chiffrée
+                    </textarea>
+            </section>
+
+            <section id="pgp" data-markdown>
+                <textarea data-template>
+                  ## Créer un volume caché
+                    </textarea>
+            </section>
+
+            <section id="ressources" data-markdown>
+                <textarea data-template>
+## Ressources
+- Freedom of the Press: [Veracrypt Guide](https://freedom.press/training/encryption-toolkit-media-makers-veracrypt-guide/)
+- Veracrypt: [User's guide](https://www.veracrypt.fr/code/VeraCrypt/plain/src/Release/Setup%20Files/VeraCrypt%20User%20Guide.pdf?id=e6ebc63c665dfd38802f63ad8882f573e66cd208)
+- Security in a box: [Veracrypt pour Windows](https://securityinabox.org/fr/guide/veracrypt/windows/), [Veracrypt pour Linux](https://securityinabox.org/fr/guide/veracrypt/linux/)
+    </textarea>
+            </section>
+
+        </div>
+    </div>
+
+    <div id="footer">
+        <p><small></small></p>
+        <p><small><a href="index.html">Slides</a> / Veracrypt</small></p>
+        <p><small>r3mlab - <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            dependencies: [{
+                    src: 'plugin/markdown/marked.js'
+                },                {
+                    src: 'plugin/markdown/markdown.js'
+                },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true
+                },
+                {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function() {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
