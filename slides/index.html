@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Slides</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black-remix.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-markdown id="formations">
+					<script type="text/template">
+						## Formations
+
+						- [Introduction](intro.html)
+						- [Sécurité des appareils](securite-appareils.html)
+						- [Sécurité en ligne](securite-en-ligne.html)
+						- [Modèle(s) de menace](modele-menace.html)
+						- [Sécurité des communications et chiffrement](securite-communications.html)
+					</script>
+				</section>
+
+				<section data-markdown id="ateliers">
+					<script type="text/template">
+						## Ateliers
+
+						- [Chiffrer ses données avec Veracrypt](atelier-veracrypt.html)
+						- [Gérer ses mots de passe avec KeePassXC](atelier-keepassxc.html)
+						- [Envoyer des messages chiffrés avec Signal](atelier-signal.html)
+						- [Envoyer des mails chiffrés avec Thunderbird](atelier-pgp.html)
+						- [Chiffrer ses mails avec ProtonMail](atelier-protonmail.html)
+						- [Empreinte en ligne](empreinte-en-ligne.html)
+					</script>
+				</section>
+
+
+			</div>
+		</div>
+
+		<div id="footer">
+				<p><small>r3mlab - <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></small></p>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

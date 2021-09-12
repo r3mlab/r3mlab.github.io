@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Atelier KeePassXC</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black-remix.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section id="title" data-markdown>
+					<textarea data-template>
+							## Atelier : KeePassXC
+
+							![keepassxc logo](img/keepassxc-icon.png)
+						</textarea>
+				</section>
+
+				<section id="presentation" data-markdown>
+					<textarea data-template>
+							## Presentation de KeePassXC
+							- hors-ligne
+							- gratuit et open-source
+							- disponible sur Windows, Mac et Linux
+						</textarea>
+				</section>
+
+				<section id="théorie" data-markdown>
+					<textarea data-template>
+							## La théorie
+							- une base de données chiffrée
+							- sur votre disque dur
+							- protégée par... un mot de passe (!)
+						</textarea>
+				</section>
+
+				<section "limites" data-markdown>
+					<textarea data-template>
+						## Limites
+						- « single point of failure »
+						- personne ne fait de sauvegardes pour vous !
+						- Le mot de passe maître doit être (très) fort
+						- Aussi sécurisé que l’est votre ordinateur
+						<br><br>Faut-il y mettre TOUS mes mots de passe ?
+					</textarea>
+				</section>
+
+				<section id="installation" data-markdown>
+					<textarea data-template>
+						## Installation
+
+						- Depuis le [site officiel](https://keepassxc.org/download)
+						- On vérifie la somme ou la signature
+						</textarea>
+				</section>
+
+				<section id="setup" data-markdown>
+					<textarea data-template>
+						## Démarrage
+						- Créer une nouvelle base de données
+						- La protéger avec un mot de passe maître fort ([Diceware](https://www.rempe.us/diceware/#eff), par exemple)
+						</textarea>
+				</section>
+
+				<section id="creer-enregistrer-mdp" data-markdown>
+					<textarea data-template>
+						## Créer / Enregistrer un mot de passe
+						- Onglets 'mot de passe' et 'phrase de passe' : quoi utiliser, quand ?
+						- Utiliser un mot de passe
+	          </textarea>
+				</section>
+
+				<section id="securite" data-markdown>
+					<textarea data-template>
+						## Sécuriser la base de donnée
+						- Verrouiller la base de données
+						- Verouiller automatiquement en cas d’inactivité
+	        </textarea>
+				</section>
+
+				<section id="KeePassXC-Browser" data-markdown>
+					<textarea data-template>
+						## Pour aller plus loin :<br>KeePassXC-Browser
+						- Pour ne plus avoir besoin de copier-coller
+						- Pour enregistrer vos mots de passe existants, d’un clic
+						- Pour se protéger de certains type d’attaques par phishing
+	        </textarea>
+				</section>
+
+				<section id="ressources" data-markdown>
+					<textarea data-template>
+						## Ressources
+						- [KeePassXC Quickstart Guide](https://keepassxc.org/quickstart/) (KeePassXC)
+						- [Create Strong Passwords](https://ssd.eff.org/en/module/creating-strong-passwords) (EFF)
+						- [How to use KeePassXC](https://ssd.eff.org/en/module/how-use-keepassxc) (EFF)
+	    		</textarea>
+				</section>
+
+			</div>
+		</div>
+
+		<div id="footer">
+			<p><a href="index.html">Slides</a> / KeePassXC</p>
+			<p class="license">r3mlab - <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></p>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>

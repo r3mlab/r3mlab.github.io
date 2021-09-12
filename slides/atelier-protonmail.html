@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Atelier ProtonMail</title>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black-remix.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+			<section id="titre" data-markdown>
+				<textarea data-template>
+					## Atelier : ProtonMail
+
+					![protonmail logo](img/protonmail-logo.png)
+				</textarea>
+			</section>
+
+			<section id="pourquoi" data-markdown data-background="#4d7e65">
+				<textarea data-template>
+				## Pourquoi utiliser ProtonMail ?
+				- Le business model : security as a service <br>(vs. Google dont le modèle est basé sur la publicité)
+				- Utiliser PGP facilement
+				- Vous place hors de portée de pas mal d’adversaires
+				</textarea>
+			</section>
+
+			<section id="pourquoi-pas" data-markdown data-background="#b5533c">
+				<textarea data-template>
+				## Pourquoi ne PAS utiliser ProtonMail
+				- Pas entièrement open source
+				- Risque de compromission du service ? cf. [LavaBit](https://en.wikipedia.org/wiki/Lavabit)
+				- Est tenu de collaborer avec les autorités dans certains cas, cf. [Transparency Report](https://protonmail.com/blog/transparency-report/)
+				</textarea>
+			</section>
+
+			<section "théorie" data-markdown data-background="#4d7e65">
+				<textarea data-template>
+				### La théorie
+				Un mélange de chiffrement symétrique et assymétrique :
+				- une paire de clés pour envoyer/recevoir des messages
+				- Ces clés sont stockées sur les serveurs de ProtonMail
+				- La clé privée est chiffrée avec le mot de passe <br>de votre compte. Elle n'est déchiffrée que localement.
+
+				→ En théorie, Protonmail ne devrait pas pouvoir lire le contenu.
+				</textarea>
+			</section>
+
+			<section id="mais" data-markdown data-background="#b5533c">
+				<textarea data-template>
+				## Mais...
+				- Métadonnées : de connexion, de messages… <br>Encore plus important que le contenu !
+				<br>→ Accessibles à Protonmail (et donc [sujettes à requisitions](https://protonmail.com/blog/climate-activist-arrest/))
+				- Que se passe-t-il vraiment "sous le capot" ? Impossible de le savoir
+				<br><br>
+				→ Eviter ProtonMail si la menace est potentiellement sophistiquée.
+				</textarea>
+			</section>
+
+			<section id="inscription" data-markdown>
+				<textarea data-template>
+				## Inscription
+				https://protonmail.com
+
+				⚠ On prend 2 min pour réfléchir :
+				- Je mets mon nom dans mon identifiant, ou pas ?
+				- Quel type de mot de passe utiliser ?
+				- Dois-je vérifier mon compte par mail ? par téléphone ?
+				</textarea>
+			</section>
+
+			<section id="b-a-ba" data-markdown>
+				<textarea data-template>
+				## Le B-A BA
+				Lorsqu'on rédige un nouveau courrier :
+				- à un autre utilisateur de ProtonMail :<br>  → chiffré de bout en bout (PGP)
+				- à un mail extérieur : <br>  → pas chiffré, ou chiffrement asymétrique.
+				- possibilité de joindre sa clé publique
+				- un doute ? Regarder le cadenas à côté du destinataire.
+        </textarea>
+			</section>
+
+			<section id="pgp" data-markdown>
+				<textarea data-template>
+				## PGP avec tout le monde !
+				- Trouver la clé publique de son contact.
+				- L'ajouter aux contacts
+				- PGP/Mime vs. PGP/inline
+        </textarea>
+			</section>
+
+			<section>
+				<section id="sécuriser compte" data-markdown>
+					<textarea data-template>
+					## Bien sécuriser son compte ProtonMail
+          </textarea>
+				</section>
+
+				<section id="securiser-cle" data-markdown>
+					<textarea data-template>
+					## La clé de chiffrement
+					- Comment générer une clé plus forte ?
+					- Faut-il le faire ?
+					- Comment/pourquoi révoquer une clé ?
+          </textarea>
+				</section>
+
+				<section id="securiser-2FA" data-markdown>
+					<textarea data-template>
+					## L'authentification à deux facteurs
+					- Comment ça marche ?
+					- A activer sous Settings > Security
+					- Sur son téléphone : FreeOTP (open-source), Google Authenticator, Authy...
+					- Un problème ? Vérifiez l'heure !
+
+					→ Se déconnecter, se reconnecter.
+          </textarea>
+				</section>
+
+				<section id="securiser-logs-trackers" data-markdown>
+					<textarea data-template>
+					## Surveiller l'accès à son compte
+					- Settings > Security > Authentication Logs
+					- 'Basic' ou 'Advanced'
+					</textarea>
+				</section>
+
+				<section id="securiser-logs-trackers" data-markdown>
+					<textarea data-template>
+					## Désactiver les traqueurs
+					- Account > Email Content
+					- "Remote content" + "Embedded images" → "manual"
+					</textarea>
+				</section>
+
+			</section>
+
+			<section id="ressources" data-markdown>
+				<textarea data-template>
+				## Ressources
+				- [ProtonMail: How to use PGP](https://protonmail.com/support/knowledge-base/how-to-use-pgp/)
+				- [Protonmail like a pro](https://freedom.press/training/protonmail-pro/)<br>(Freedom of the Press Foundation)
+				- [ProtonMail Threat Model](https://protonmail.com/blog/protonmail-threat-model/)
+    		</textarea>
+			</section>
+
+		</div>
+	</div>
+
+	<div id="footer">
+		<p><small><a href="index.html">Slides</a> / ProtonMail</small></p>
+		<p class="license">r3mlab - <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></p>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/search/search.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+		});
+	</script>
+
+</body>
+
+</html>

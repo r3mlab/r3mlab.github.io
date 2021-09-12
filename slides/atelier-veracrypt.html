@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Atelier Veracrypt</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black-remix.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+
+				<section id="titre" data-markdown>
+						<textarea data-template>
+						## Atelier : Veracrypt
+
+						![veracrypt logo](img/veracrypt-logo.png) <!-- .element height="25%" width="25%" -->
+						</textarea>
+				</section>
+
+				<section id="presentation" data-markdown>
+						<textarea data-template>
+							## Présentation
+							- historique
+							- le chiffrement symétrique
+							- quelle différence avec le chiffrement de mon ordinateur?
+							- quelle différence avec le chiffrement de l'utilitaire de disques sous MacOS ?
+						</textarea>
+					</section>
+
+				<section id="utilisation" data-markdown>
+						<textarea data-template>
+							## Quelle utilisation ?
+							- Chiffrer mes données d'enquête
+							- Archiver mes données (hors ligne ? en ligne ?)
+							- Echanger des données ?
+							- en voyage ?
+						</textarea>
+				</section>
+
+				<section id="preparation" data-markdown>
+						<textarea data-template>
+							## Préparation
+							- Télécharger depuis le [site officiel](https://veracrypt.fr)
+							- Vérifier le téléchargement
+							- MacOS : installer [Fuse](https://osxfuse.github.io/)
+							- Installer Veracrypt
+						</textarea>
+				</section>
+
+				<section id="premier-lancement" data-markdown>
+						<textarea data-template>
+							## Premier lancement
+							- Conteneurs/Volumes
+							- "Slots"
+						</textarea>
+				</section>
+
+			<section>
+
+				<section id="conteneur-chiffre" data-markdown>
+						<textarea data-template>
+							## Créer un conteneur chiffré
+						</textarea>
+				</section>
+
+				<section id="systemes-fichiers">
+				<h2>Compatibilité des systèmes de fichiers</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Type</th>
+							<th>Windows</th>
+							<th>MacOS</th>
+							<th>Linux</th>
+							<th>Limitations</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>FAT32</td>
+							<td>✅</td>
+							<td>✅</td>
+							<td>✅</td>
+							<td>4go max/fichier</td>
+						</tr>
+						<tr>
+							<td>NTFS</td>
+							<td>✅</td>
+							<td>❌</td>
+							<td>✅</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>MacOS/APFS</td>
+							<td>❌</td>
+							<td>✅</td>
+							<td>✅</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Ext4</td>
+							<td>❌</td>
+							<td>❌</td>
+							<td>✅</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Exfat</td>
+							<td>✅</td>
+							<td>✅</td>
+							<td>✅</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			</section>
+
+				<section id="cle-usb-chiffre" data-markdown>
+						<textarea data-template>
+							## Créer une clé USB chiffrée
+						</textarea>
+				</section>
+
+				<section id="pgp" data-markdown>
+						<textarea data-template>
+							## Créer un volume caché
+						</textarea>
+				</section>
+
+				<section id="ressources" data-markdown>
+						<textarea data-template>
+							## Ressources
+							- [Veracrypt Guide](https://freedom.press/training/encryption-toolkit-media-makers-veracrypt-guide/) (Freedom of the Press)
+							- [User guide](https://www.veracrypt.fr/code/VeraCrypt/plain/src/Release/Setup%20Files/VeraCrypt%20User%20Guide.pdf?id=e6ebc63c665dfd38802f63ad8882f573e66cd208) (Veracrypt)
+							- [Veracrypt pour Windows](https://securityinabox.org/fr/guide/veracrypt/windows/), [Veracrypt pour Linux](https://securityinabox.org/fr/guide/veracrypt/linux/) (Security in a box)
+						</textarea>
+				</section>
+
+			</div>
+		</div>
+
+		<div id="footer">
+			<p><small><a href="index.html">Slides</a> / Veracrypt</small></p>
+			<p class="license">r3mlab - <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></p>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Sécurité en ligne</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black-remix.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+		  <div class="slides">
+
+				<section id="titre" data-markdown data-background-image="https://media.giphy.com/media/9D8SldWd6lmVbHwRB1/giphy.gif">
+					<textarea data-template>
+							# Sécurité en ligne
+						</textarea>
+				</section>
+
+				<section id="phishing" data-markdown>
+					<textarea data-template>
+							## Se protéger du phishing
+
+							- Savoir lire les URLs
+							- Ne pas se fier au champ "From" des e-mails.
+							- Ne pas cliquer sur les liens qui mènent vers des sites inconnus.
+							- Ne pas suivre les adresses raccourcies (bit.ly & co.)
+							- Survoler le texte du lien pour afficher sa destination.
+							- En cas de doute ou d'accès indispensable :<br>[VirusTotal](https://www.virustotal.com/), Google Drive, machines virtuelles, [Tails](https://tails.boum.org/)...
+						</textarea>
+				</section>
+
+				<section id="traces" data-markdown>
+					<textarea data-template>
+								## Traces de navigation
+
+								- [Que voient les sites que je visite ?](https://ipleak.net/)
+								- [L'empreinte de mon navigateur](https://coveryourtracks.eff.org/)
+								- Cookies, contenu tiers
+							</textarea>
+				</section>
+
+			<section>
+
+				<section id="navigateurs" data-markdown>
+					<textarea data-template>
+							## Navigateur(s)
+
+							- Premier vecteur d'attaques : à tenir à jour absolument !
+							- Firefox, Chrome, Safari... : lequel utiliser ?
+						</textarea>
+				</section>
+
+				<section id="navigateurs-extensions" data-markdown>
+					<textarea data-template>
+							##  Les extensions indispensables :
+							* [HTTPS Everywhere](https://www.eff.org/https-everywhere) pour chiffrer les données échangées.
+							* [PrivacyBadger](https://www.eff.org/privacybadger) pour bloquer les traqueurs.
+							* [Ublock Origins](https://github.com/gorhill/uBlock) pour bloquer les pubs.
+						</textarea>
+				</section>
+
+				<section id="navigateurs-compartimenter" data-markdown>
+					<textarea data-template>
+							##  Compartimenter
+							* utiliser plusieurs navigateurs
+							* utiliser [Multi-Account Containers](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/)
+							* Et sur mobile ? [Firefox Focus](https://www.mozilla.org/en-US/firefox/mobile/#focus), [BraveBrowser](https://brave.com).
+						</textarea>
+				</section>
+
+			</section>
+
+
+				<section id="http-diagram" data-background-image="img/diagrams/HTTP.png" data-background-size="70%">
+				</section>
+
+				<section id="https-diagram" data-background-image="img/diagrams/HTTPS.png" data-background-size="70%">
+				</section>
+
+				<section id="vpn" data-markdown>
+					<textarea data-template>
+								## VPNs
+
+								- Pourquoi faire ?
+								- Quelle protection ?
+								- Comment choisir son VPN ?
+								  - pays/jurisdiction ?
+								  - logs/données conservées ?
+								  - moyen de paiement ?
+					</textarea>
+				</section>
+
+				<section id="vpn-diagram" data-background-image="img/diagrams/VPN.png" data-background-size="70%">
+				</section>
+
+				<section id="tor" data-markdown>
+					<textarea data-template>
+									## Tor
+
+									- Le principe
+									- C'est légal ?
+									- En pratique : utiliser [TorBrowser](https://www.torproject.org/download/)
+									- Les limites
+									  - lenteur et captchas
+									  - emplacement de connexion
+									  - attaques par corrélation
+								</textarea>
+				</section>
+
+
+				<section id="tor-diagram" data-background-image="img/diagrams/TOR.png" data-background-size="70%">
+				</section>
+
+				<section>
+
+					<section id="mdp-2" data-markdown>
+						<textarea data-template>
+							## Les mots de passe (2)
+						</textarea>
+					</section>
+
+
+
+					<section id="mdp-fuites" data-markdown>
+						<textarea data-template>
+							## 1 site = 1 mot de passe
+							- Indispensable. Pourquoi ?
+							- Les [fuites de données](https://en.wikipedia.org/wiki/List_of_data_breaches)
+							- Comment font les hackers ?
+						</textarea>
+					</section>
+
+					<section id="mdp-hygiene" data-markdown>
+						<textarea data-template>
+							## Comment se protéger ?
+							 * Vérifier : "[Have I Been Pwned?](https://haveibeenpwned.com/)"
+							 * Se tenir au courant: [HIBP Notify Me](https://haveibeenpwned.com/NotifyMe)
+							 * Anticiper :
+								 - utiliser des [alias](https://relay.firefox.com/)
+								 - des [adresses jetables](https://temp-mail.org/)
+								 - <b>1 site = 1 mot de passe !</b>
+						</textarea>
+					</section>
+
+					<section id="mdp-manager" data-markdown>
+						<textarea data-template>
+							## Utiliser un gestionnaire <br>de mots de passe
+
+							- <span>Le principe</span>
+							- En ligne ou hors ligne ?
+							- Voir [Atelier KeePassXC](atelier-keepassxc.html)
+						</textarea>
+					</section>
+
+
+
+				</section>
+
+				<section>
+
+					<section id="2fa-title" data-markdown>
+						<textarea data-template>
+							## L'authentification à 2 facteurs
+						</textarea>
+					</section>
+
+					<section id="2fa-intro" data-markdown>
+						<textarea data-template>
+							## L'authentification à 2 facteurs ("2FA")
+
+							- Le principe
+							- Les différents facteurs d'authentification<br>(oubliez le sms!)
+							- Que faire en cas de perte de téléphone ?
+							- Où/comment sauvegarder ses codes 2FA ?
+						</textarea>
+					</section>
+
+					<section id="2fa-list" data-markdown>
+						<textarea data-template>
+							## A activer impérativement sur
+							- Gestionnaire de mots de passe (si en ligne)
+							- [Google](https://www.google.com/landing/2step/?hl=fr)
+							- [Facebook](https://fr-fr.facebook.com/help/148233965247823), [Twitter](https://help.twitter.com/fr/managing-your-account/two-factor-authentication)
+							- [ProtonMail](https://protonmail.com/support/knowledge-base/two-factor-authentication/)
+							- ...
+						</textarea>
+					</section>
+
+				</section>
+
+				<section id="misc" data-markdown>
+					<textarea data-template>
+						## Autres bonnes pratiques
+
+						- Les questions de "sécurité"
+						- Les adresses de récupération
+						- Vérifier les connections à ses comptes :
+						<br> [Google](https://myaccount.google.com/security), [Facebook](https://www.facebook.com/settings?tab=security&section=sessions&view), [Twitter](https://twitter.com/settings/sessions), [ProtonMail](https://mail.protonmail.com/security) (à activer)
+					</textarea>
+				</section>
+
+				<section id="ressources" data-markdown>
+					<textarea data-template>
+											## Ressources
+
+											- [Surveillance Self Defense](https://ssd.eff.org/en) (EFF)
+											- [Training](https://freedom.press/training/) (Freedom of the Press Foundation)
+											- [Security Planner](https://www.securityplanner.org/) (Citizenlab)
+											- [The guide to not getting hacked](https://motherboard.vice.com/en_us/article/d3devm/motherboard-guide-to-not-getting-hacked-online-safety-guide) (Motherboard)
+											- [Surveillance Self-Defense for Journalists](https://medium.com/theintercept/surveillance-self-defense-for-journalists-ce627e332db6)<br>(The Intercept)
+											- [Digital First Aid Kit](https://www.digitaldefenders.org/digitalfirstaid/) (Digital Defenders)
+									</textarea>
+				</section>
+
+			</div>
+		</div>
+
+				<div id="footer">
+					<p><small><a href="index.html">Slides</a> / Sécurité en ligne</small></p>
+					<p class="license">r3mlab - <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></p>
+				</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>

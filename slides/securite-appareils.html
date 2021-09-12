@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Sécurité des appareils</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black-remix.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+		<div class="slides">
+
+						<section id="titre" data-markdown data-background-image="https://media.giphy.com/media/5Zesu5VPNGJlm/giphy.gif">
+							<textarea data-template>
+									# Sécurité des appareils
+								</textarea>
+						</section>
+
+						<section id="intro" data-markdown>
+							<textarea data-template>
+									## Appareils
+
+									* Ordinateurs / téléphones / le reste
+									* Systèmes d'exploitation
+									* Connectiques : USB, SD, etc.
+									* Accessoires utiles
+									* Compartimenter / utiliser [Tails](https://tails.boum.org/)
+								</textarea>
+						</section>
+
+						<section id="maj" data-markdown>
+							<textarea data-template>
+									![updates](img/updates.png) <!-- .element height="55%" width="55%" -->
+									## Mises à jour
+									* Pourquoi ? <q> je n'ai pas besoin des dernières fonctionnalités </q>
+									* Aussi fréquentes que possible / dès que possible.
+									* Mises à jour de sécurité automatiques si possible.
+									* Attention aux "vieux" appareils
+								</textarea>
+						</section>
+
+						<section id="apps" data-markdown>
+							<textarea data-template>
+									## Applications
+
+									* Utiliser des applications open-source et/ou réputées.
+									* Les télécharger depuis le site officiel ou l'App Store
+									* Eviter les logiciels piratés.
+									* Désinstaller Flash, Java, Adobe Reader
+								</textarea>
+						</section>
+
+						<section id="antivirus" data-markdown>
+							<textarea data-template>
+									## Antivirus
+
+									* Vraiment utile ? Contre quoi ?
+									* Windows/Mac OS/Linux/Téléphones
+									* Logiciels libres vs logiciels propriétaires
+								</textarea>
+						</section>
+
+						<section id="reseau" data-markdown>
+							<textarea data-template>
+									## Réseau
+
+									* Activer le pare-feu
+									* Les réseaux Wifi
+									  - vulnérabilités
+									  - mot de passe
+									  - Wifis publics
+									  - quelles traces ?
+									* Le réseau téléphonique
+								</textarea>
+						</section>
+
+						<section>
+
+							<section id="mdp-section" data-markdown data-background-image="https://freedom.press/media/images/kanyes_password.original.gif">
+								<textarea data-template >
+									## Les ~~mots~~ phrases de passe
+								</textarea>
+							</section>
+
+							<section id="mdp-general" data-markdown>
+								<textarea data-template>
+									## Un bon mot de passe est :
+									<ul>
+									<li class="fragment">à utilisation unique</li>
+									<li class="fragment">long</li>
+									<li class="fragment">varié</li>
+									<li class="fragment">aléatoire</li>
+								</ul>
+								</textarea>
+							</section>
+
+							<section id="mdp-attention" data-markdown>
+								<textarea data-template>
+									## Attention !
+
+									- Les mots de passes difficiles à deviner par un humain peuvent être faciles à deviner par un ordinateur.
+									- Eviter les subst1tuti0ns et autres @rtif!ces
+								</textarea>
+							</section>
+
+							<section id="mdp-diceware" data-markdown>
+								<textarea data-template>
+									## Des mots de passe forts <br><b>ET</b> faciles à mémoriser ?
+
+									- La méthode *Diceware*
+									- En pratique : [en ligne](https://www.rempe.us/diceware/#eff) ou hors-ligne ? quel dico ?
+								</textarea>
+							</section>
+
+							<section id="mdp-telephone" data-markdown>
+								<textarea data-template>
+									## Et sur téléphone ?
+									- PIN ?
+									- Schéma ?
+									- Mot de passe ?
+									- Biométrie ?
+								</textarea>
+							</section>
+
+						</section>
+
+						<section id="chiffrement" data-markdown>
+							<textarea data-template>
+									## Chiffrer ses appareils
+
+									- iOS / Android : dans les paramètres
+									- FileVault (Mac)
+									- Bitlocker (Windows Pro)
+									- LUKS/cryptsetup (Linux)
+									- Les limites du chiffrement & les solutions
+								</textarea>
+						</section>
+
+						<!-- <section id="boot" data-markdown>
+							<textarea data-template>
+									## Sécuriser le démarrage de l'ordinateur
+
+									- BIOS, UEFI, GRUB... WTF ?
+									- Définir un mot de passe superviseur<br><small>(attention au QWERTY!)</small>
+									- Forcer le démarrage sur le disque dur, interdire démarrage sur USB.
+									- Les limites & les solutions
+								</textarea>
+						</section> -->
+
+						<section id="chiffrement" data-markdown>
+							<textarea data-template>
+									## Chiffrer ses données
+
+									Voir [Atelier Veracrypt](atelier-veracrypt.html)
+								</textarea>
+						</section>
+
+						<section id="ressources" data-markdown>
+							<textarea data-template>
+									## Ressources
+
+									- [Surveillance Self Defense](https://ssd.eff.org/en) (EFF)
+									- [Training](https://freedom.press/training/) (Freedom of the Press Foundation)
+									- [The guide to not getting hacked](https://motherboard.vice.com/en_us/article/d3devm/motherboard-guide-to-not-getting-hacked-online-safety-guide) (Motherboard)
+									- [Surveillance Self-Defense for Journalists](https://medium.com/theintercept/surveillance-self-defense-for-journalists-ce627e332db6)<br>(The Intercept)
+									- [Digital First Aid Kit](https://www.digitaldefenders.org/digitalfirstaid/) (Digital Defenders)
+								</textarea>
+						</section>
+
+					</div>
+				</div>
+
+				<div id="footer">
+					<p><small><a href="index.html">Slides</a> / Sécurité des appareils</small></p>
+					<p class="license">r3mlab - <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></p>
+				</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
