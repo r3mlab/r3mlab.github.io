@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Protéger ses données</title>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black-remix.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+			<section id="titre" data-markdown
+				data-background-image="https://media.giphy.com/media/5Zesu5VPNGJlm/giphy.gif">
+				<textarea data-template>
+									# Protéger ses données
+								</textarea>
+			</section>
+
+			<section id="intro" data-markdown>
+				<textarea data-template>
+									## Appareils
+
+									* Systèmes d'exploitation
+									* Connectiques : USB, SD, etc.
+									* Compartimenter / utiliser [Tails](https://tails.boum.org/)
+								</textarea>
+			</section>
+
+			<section id="maj" data-markdown>
+				<textarea data-template>
+									![updates](img/updates.png) <!-- .element height="55%" width="55%" -->
+									## Mises à jour
+									* Pourquoi ?</q>
+									* Aussi fréquentes que possible / dès que possible.
+									* Les différents types de mises à jour
+									* Surveiller et anticiper la fin des mises à jour
+								</textarea>
+			</section>
+
+			<section id="apps" data-markdown>
+				<textarea data-template>
+									## Applications
+
+									* Utiliser des applications open-source et/ou réputées.
+									* Les télécharger depuis le site officiel ou l'App Store
+									* Eviter les logiciels piratés.
+								</textarea>
+			</section>
+
+
+			<section id="antivirus" data-markdown>
+				<textarea data-template>
+									## Antivirus
+
+									* Vraiment utile ? Contre quoi ?
+									* Sécurité contre vie privée
+								</textarea>
+			</section>
+
+			<section id="phishing" data-markdown>
+				<textarea data-template>
+									## Se protéger du phishing
+		
+									- Savoir lire les URLs
+									- Ne pas se fier au champ "From" des e-mails.
+									- Ne pas cliquer sur les liens qui mènent vers des sites inconnus.
+									- Ne pas suivre les adresses raccourcies (bit.ly & co.)
+									- Survoler le texte du lien pour afficher sa destination.
+									- En cas de doute ou d'accès indispensable :<br>[VirusTotal](https://www.virustotal.com/), Google Drive, machines virtuelles, [Tails](https://tails.boum.org/)...
+									- Stratégies de groupe
+								</textarea>
+			</section>
+
+			<section>
+
+				<section id="mdp-section" data-markdown
+					data-background-image="https://freedom.press/media/images/kanyes_password.original.gif">
+					<textarea data-template>
+									## Verrouiller ses appareils
+								</textarea>
+				</section>
+
+				<section id="mdp-general" data-markdown>
+					<textarea data-template>
+									## Un bon mot de passe est :
+									<ul>
+									<li class="fragment">long</li>
+									<li class="fragment">varié</li>
+									<li class="fragment">choisi aléatoirement</li>
+									<li class="fragment">à utilisation unique</li>
+								</ul>
+								</textarea>
+				</section>
+
+				<section id="mdp-bonnes-pratiques" data-markdown>
+					<textarea data-template>
+									## Bonnes pratiques
+
+									- Les mots de passes difficiles à deviner par un humain peuvent être faciles à deviner par un ordinateur.
+									- Eviter les subst1tuti0ns et autres @rtif!ces
+									- Eviter les variations d'un même mot de passe
+								</textarea>
+				</section>
+
+				<section id="mdp-diceware" data-markdown>
+					<textarea data-template>
+									## Des mots de passe forts <br><b>ET</b> faciles à mémoriser ?
+
+									- La méthode *Diceware*
+									- En pratique : [en ligne](https://www.rempe.us/diceware/#eff) ou hors-ligne ? quel dico ?
+								</textarea>
+				</section>
+
+				<section id="mdp-telephone" data-markdown>
+					<textarea data-template>
+									## Et sur téléphone ?
+									- PIN ?
+									- Schéma ?
+									- Mot de passe ?
+									- Biométrie ?
+								</textarea>
+				</section>
+
+			</section>
+
+			<section id="chiffrement" data-markdown>
+				<textarea data-template>
+									## Le chiffrement
+
+									- Qu'est-ce que c'est ?
+									- C'est légal ?
+									- Un (tout petit) peu de théorie
+									- l'épreuve du temps
+								</textarea>
+			</section>
+
+			<section id="chiffrement-os" data-markdown>
+				<textarea data-template>
+									## Chiffrer la mémoire de ses appareils
+
+									- iOS / Android : dans les paramètres
+									- [FileVault](https://support.apple.com/fr-fr/guide/mac-help/mh11785/mac) (Mac)
+									- Bitlocker ([Windows 10](https://support.microsoft.com/fr-fr/windows/activer-le-chiffrement-de-l-appareil-0c453637-bc88-5f74-5105-741561aae838#ID0EBD=Windows_10) / [Windows 11 Pro](https://support.microsoft.com/fr-fr/windows/activer-le-chiffrement-de-l-appareil-0c453637-bc88-5f74-5105-741561aae838#ID0EBD=Windows_11))
+									- LUKS/cryptsetup (Linux)
+									- Les limites du chiffrement & les solutions
+								</textarea>
+			</section>
+
+			<section id="chiffrement-vera" data-markdown>
+				<textarea data-template>
+									## Chiffrer des données et des supports externes
+
+									Voir [Atelier Veracrypt](atelier-veracrypt.html)
+								</textarea>
+			</section>
+
+			<section id="ressources" data-markdown>
+				<textarea data-template>
+									## Ressources
+
+									- [Surveillance Self Defense](https://ssd.eff.org/en) (EFF)
+									- [Training](https://freedom.press/training/) (Freedom of the Press Foundation)
+									- [The guide to not getting hacked](https://motherboard.vice.com/en_us/article/d3devm/motherboard-guide-to-not-getting-hacked-online-safety-guide) (Motherboard)
+									- [Surveillance Self-Defense for Journalists](https://medium.com/theintercept/surveillance-self-defense-for-journalists-ce627e332db6)<br>(The Intercept)
+									- [Digital First Aid Kit](https://www.digitaldefenders.org/digitalfirstaid/) (Digital Defenders)
+								</textarea>
+			</section>
+
+		</div>
+	</div>
+
+	<div id="footer">
+		<p><small><a href="index.html#modules-courts">Modules courts</a> / Protéger ses données</small></p>
+		<p class="license">r3mlab - <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></p>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/search/search.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+		});
+
+	</script>
+
+</body>
+
+</html>

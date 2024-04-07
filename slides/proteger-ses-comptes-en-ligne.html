@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Protéger ses comptes en ligne</title>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black-remix.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+			<section id="titre" data-markdown
+				data-background-image="https://media.giphy.com/media/9D8SldWd6lmVbHwRB1/giphy.gif">
+				<textarea data-template>
+							# Protéger ses comptes<br>en ligne
+						</textarea>
+			</section>
+
+
+			<section id="mdp-fuites" data-markdown>
+				<textarea data-template>
+							## 1 site = 1 mot de passe
+							- Indispensable !
+							- Les [fuites de données](https://informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/)
+							- Comment s'en servent les hackers ?
+						</textarea>
+			</section>
+
+			<section id="mdp-hygiene" data-markdown>
+				<textarea data-template>
+							## Comment se protéger ?
+
+							 * Vérifier : "[Have I Been Pwned?](https://haveibeenpwned.com/)"
+							 * Se tenir au courant: [HIBP Notify Me](https://haveibeenpwned.com/NotifyMe)
+							 * Anticiper :
+								 - utiliser des [alias/relais/masques](https://relay.firefox.com/)
+								 - ou des [adresses jetables](https://temp-mail.org/)
+								 - <b>1 site = 1 mot de passe !</b>
+								 - activer l'authentification à deux facteurs
+								 - Supprimer ses comptes inactifs si possible
+						</textarea>
+			</section>
+
+			<section id="mdp-manager" data-markdown>
+				<textarea data-template>
+							## Utiliser un gestionnaire <br>de mots de passe
+
+							- <span>Le principe</span>
+							- En ligne ou hors ligne ?
+							- En pratique : 
+							  - utilisation
+							  - paramètres
+							  - extension navigateur
+						</textarea>
+			</section>
+
+			<section>
+
+				<section id="2fa-intro" data-markdown>
+					<textarea data-template>
+							## L'authentification à 2 facteurs ("2FA")
+
+							- Le principe
+							- Une protection contre les fuites de données et le phishing
+							- Notification, codes, clés, SMS
+							- Que faire en cas de perte de téléphone ? backups, clés de secours
+						</textarea>
+				</section>
+
+				<section id="2fa-list" data-markdown>
+					<textarea data-template>
+							## A activer sur
+							- Gestionnaire de mots de passe (si en ligne)
+							- [Google](https://www.google.com/landing/2step/?hl=fr)
+							- [Facebook](https://fr-fr.facebook.com/help/148233965247823), [Twitter](https://help.twitter.com/fr/managing-your-account/two-factor-authentication)
+							- [ProtonMail](https://protonmail.com/support/knowledge-base/two-factor-authentication/)
+							- [partout où c'est possible](https://2fa.directory) !
+						</textarea>
+				</section>
+
+			</section>
+
+			<section id="misc" data-markdown>
+				<textarea data-template>
+						## Autres bonnes pratiques
+
+						- Les questions de "sécurité"
+						- Les adresses de récupération
+						- Vérifier les connections à ses comptes :
+						<br> [Google](https://myaccount.google.com/security), [Facebook](https://www.facebook.com/settings?tab=security&section=sessions&view), [Twitter](https://twitter.com/settings/sessions), [ProtonMail](https://mail.protonmail.com/security) (à activer)
+					</textarea>
+			</section>
+
+			<section id="ressources" data-markdown>
+				<textarea data-template>
+											## Ressources
+
+											- [Surveillance Self Defense](https://ssd.eff.org/en) (EFF)
+											- [Training](https://freedom.press/training/) (Freedom of the Press Foundation)
+											- [Security Planner](https://www.securityplanner.org/) (Citizenlab)
+											- [The guide to not getting hacked](https://motherboard.vice.com/en_us/article/d3devm/motherboard-guide-to-not-getting-hacked-online-safety-guide) (Motherboard)
+											- [Surveillance Self-Defense for Journalists](https://medium.com/theintercept/surveillance-self-defense-for-journalists-ce627e332db6)<br>(The Intercept)
+											- [Digital First Aid Kit](https://www.digitaldefenders.org/digitalfirstaid/) (Digital Defenders)
+									</textarea>
+			</section>
+
+		</div>
+	</div>
+
+	<div id="footer">
+		<p><small><a href="index.html#modules-courts">Modules courts</a> / Protéger ses comptes en ligne</small></p>
+		<p class="license">r3mlab - <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></p>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/search/search.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+		});
+
+	</script>
+
+</body>
+
+</html>
