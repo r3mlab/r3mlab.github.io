@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Communiquer</title>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black-remix.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+			<section id="titre" data-markdown
+				data-background-image="img/gif/parrot-phone.webp">
+				<textarea data-template>
+					# Communiquer
+				</textarea>
+			</section>
+
+			<section id="comsec" data-markdown>
+				<textarea data-template>
+          ### Sécurité des communications ?
+          <li class="fragment" style="text-align:left;">
+            <b>Authenticité</b>
+            <br><i>➔ Est-ce que je parle bien à qui je crois parler ?</i>
+          </li>
+          <li class="fragment" style="text-align:left;">
+            <b>Intégrité</b>
+            <br><i>➔ Le message reçu est-il bien le message envoyé ?</i>
+          </li>
+          <li class="fragment" style="text-align:left;">
+            <b>Confidentialité</b>
+            <br><i>➔ Le message a-t-il été lu par d'autres ?</i>
+          </li>
+          <li class="fragment" style="text-align:left;">
+            <b>Disponibilité</b>
+            <br><i>➔ Puis-je correspondre quand j'en ai besoin ?</i>
+					</li>
+		<li class="fragment" style="text-align:left;">
+						<b>Discrétion</b>
+						<br><i>➔ Qui d'autre sait que cette conversation a lieu ?</i>
+					  </li>
+					</textarea>
+			</section>
+
+			<section id="symetrique" data-markdown>
+				<textarea data-template>
+          ## Le chiffrement symétrique
+          <br>
+          <li style="text-align:left;">un mot de passe pour chiffrer ET déchiffrer</li>
+          <li class="fragment" style="text-align:left;">...mais comment se l'échanger ?</li>
+					</textarea>
+			</section>
+
+			<section id="asymetrique" data-markdown>
+				<textarea data-template>
+          ## Le chiffrement asymétrique
+          <br>
+          <li style="text-align:left;">Une clé pour chiffrer, une autre pour déchiffrer</li>
+          <li class="fragment" style="text-align:left;">Une paire de clés par personne</li>
+          <li class="fragment" style="text-align:left;">Quelques métaphores utiles : boîte aux lettres, cadenas...</li>
+					</textarea>
+			</section>
+
+			<section id="vocabulaire" data-markdown>
+				<textarea data-template>
+          ### Point vocabulaire sur <strike>l’encryption</strike> le chiffrement
+          <li class="fragment" style="text-align:left;">
+            <b>CHIFFRER</b> :
+            <i>rendre un message illisible en utilisant un mot de passe ou une clé publique</i>
+          </li>
+
+          <li class="fragment" style="text-align:left;">
+            <b>DECHIFFRER</b> :
+            <i>rendre un message lisible à nouveau en utilisant le mot de passe ou la clé privée</i>
+          </li>
+
+          <li class="fragment" style="text-align:left;">
+            <b>DECRYPTER</b> :
+            <i>rendre un message lisible SANS utiliser le mot de passe/la clé</i>
+          </li>
+
+          <li class="fragment" style="text-align:left;">
+            <b>PGP / OpenPGP / GnuPG / GPG … </b>
+          </li>
+		<li class="fragment" style="text-align:left;">
+			<b>Chiffrement de bout en bout / end-to-end encryption</b>
+		</li>
+
+					</textarea>
+			</section>
+
+			<section id="limites" data-markdown>
+				<textarea data-template>
+          ## Limites
+          <br>
+          <li style="text-align:left;">Utiliser le chiffrement ne rend pas anonyme.</li>
+          <li class="fragment" style="text-align:left;">Quelles métadonnées sont échangées ?</li>
+          <li class="fragment" style="text-align:left;">Une fois les données déchiffrées, où et comment sont-elles stockées ? Comment les protéger ?</li>
+					</textarea>
+			</section>
+
+			<section id="pratique" data-markdown>
+				<textarea data-template>
+				      ## En pratique
+
+				      * Messages : [Signal](atelier-signal.html)
+				      * Mails : [ProtonMail](atelier-protonmail.html), [Thunderbird](atelier-pgp.html)
+					</textarea>
+			</section>
+
+		</div>
+	</div>
+
+	<div id="footer">
+		<p><small><a href="index.html#parcours-voyage">Reportage en zone sensible</a> / Communiquer</small></p>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/search/search.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+		});
+	</script>
+
+</body>
+
+</html>

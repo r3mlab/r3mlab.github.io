@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Bonnes pratiques en déplacement</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black-remix.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section  id="titre" data-markdown  data-background-image="img/gif/cat-basket.webp">
+					<script type="text/template">
+						# Bonnes pratiques en déplacement
+					</script>
+				</section>
+
+				<section id="garder-appareils" data-markdown>
+					<textarea data-template>
+						## Garder ses appareils avec soi
+						
+						- Accès local = accès total
+						- Eteindre ses appareils quand c'est possible (chiffrement)
+						- Marquer ses appareils et leurs pochettes
+						- Accessoires (+ ou -) utiles
+					</textarea>
+				</section>
+
+				<section id="periphériques" data-markdown>
+					<textarea data-template>
+						## Périphériques, stockage, etc
+						
+						- Garder ses appareils avec soi
+						- N'utiliser que des périphériques de confiance
+						- Chiffrer ses supports externes
+						    - Veracrypt
+							- Utilitaire de disque (MacOS)
+					</textarea>
+				</section>
+
+				<section id="phishing" data-markdown>
+					<textarea data-template>
+							## Se protéger du phishing
+
+							- Savoir lire les URLs
+							- Ne pas se fier au champ "From" des e-mails.
+							- Ne pas cliquer sur les liens qui mènent vers des sites inconnus.
+							- Ne pas suivre les adresses raccourcies (bit.ly & co.)
+							- Survoler le texte du lien pour afficher sa destination.
+							- En cas de doute ou d'accès indispensable :<br>[VirusTotal](https://www.virustotal.com/), Google Drive, machines virtuelles, [Tails](https://tails.boum.org/)...
+							- Stratégies de groupe
+						</textarea>
+				</section>
+
+				<section id="controle-securite" data-markdown>
+					<textarea data-template>
+						## Anticiper les contrôles
+						
+						- Voyager léger (équipements et données)
+						- Applications "suspectes"
+						- Effacer les historiques (web, wifi, appels, mdp enregistrés...)
+						- Prévoir de récupérer ses données une fois le contrôle passé
+						- En cas de saisie
+					</textarea>
+				</section>
+
+
+				<section id="comprendre-traces" data-markdown>
+					<textarea data-template>
+						## Réseaux et traces
+
+						- Réseaux téléphoniques
+						- Internet et réseaux wifi
+						- GPS
+
+						-> Désactiver les réseaux non-utilisés
+					</textarea>
+				</section>
+
+
+			</div>
+		</div>
+
+
+		<div id="footer">
+			<p><small><a href="index.html#parcours-voyage">Reportage en zone sensible</a> / Bonnes pratiques en déplacement</small></p>
+	</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>

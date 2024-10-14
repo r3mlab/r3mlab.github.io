@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Au retour</title>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black-remix.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+			<section id="titre" data-markdown
+				data-background-image="img/gif/airport-luggage.gif">
+				<textarea data-template>
+									# Au retour
+								</textarea>
+			</section>
+
+			<section id="pepin" data-markdown>
+				<textarea data-template>
+									## En cas de pépin sur place
+
+									* Tenir les appareils suspects éteints/déconnectés
+									* L'analyse des appareils et ses limites
+									* Réinitialiser les appareils ou s'en séparer définitivement ?
+				</textarea>
+			</section>
+
+			<section id="mdp" data-markdown>
+				<textarea data-template>
+									## Changer ses mots de passe
+
+									* Ils ont pu être aperçus, interceptés...
+									* Rappel : 1 site = 1 mot de passe
+									* Vérifier l'activité de ses comptes
+								</textarea>
+			</section>
+
+			<section id="publication" data-markdown>
+				<textarea data-template>
+					## Publication et protection des sources
+					[![vice](img/intro/vice.jpg)](https://www.vice.com/en/article/yv5kyv/we-are-with-john-mcafee-right-now-suckers )
+				</textarea>
+			</section>
+
+			<section id="publication-2" data-markdown>
+				<textarea data-template>
+					## Le secret des sources à la publication
+					- infos, détails
+					- [documents](https://blog.erratasec.com/2017/06/how-intercept-outed-reality-winner.html), photos, métadonnées, caviardage
+					- les limites du flou et des voix modifiées
+					- que faire de mes données d'enquête ?
+				</textarea>
+			</section>
+
+		</div>
+	</div>
+
+	<div id="footer">
+		<p><small><a href="index.html#parcours-voyage">Reportage en zone sensible</a> / Au retour</small></p>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/search/search.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+		});
+
+	</script>
+
+</body>
+
+</html>
